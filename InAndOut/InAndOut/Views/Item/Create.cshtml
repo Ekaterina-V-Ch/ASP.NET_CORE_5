@@ -1,7 +1,37 @@
-﻿
-@{
-    ViewData["Title"] = "Create";
-}
+﻿@model InAndOut.Models.Item
+@{ViewData["Title"] = "Create";}
 
 <h1>@ViewData["Title"]</h1>
 
+<div class="container p-3">
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                    <label asp-for="ItemName"></label>
+                </th>
+                <th>
+                    <label asp-for="Borrower"></label>
+                </th>
+                <th>
+                    <label asp-for="Lender"></label>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td width="30%"><input asp-for="ItemName" class="form-control"/></td>
+                <td width="30%"><input asp-for="Borrower" class="form-control" /></td>
+                <td width="30%"><input asp-for="Lender" class="form-control" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row pt-4">
+        <div class="col-6 text-right">
+            <a class="btn btn-primary" asp-controller="Item" asp-action="Create">Create</a>
+        </div>
+        <div class="col-6">
+            <a class="btn btn-primary" asp-controller="Item" asp-action="Index">Go back</a>
+        </div>
+    </div>
+</div>
