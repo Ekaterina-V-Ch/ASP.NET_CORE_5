@@ -1,32 +1,34 @@
 {
   "format": 1,
   "restore": {
-    "D:\\git\\ASP.NET_CORE_5\\InAndOut\\InAndOut\\InAndOut.csproj": {}
+    "D:\\playground\\C#\\ASP.NET_CORE_5\\InAndOut\\InAndOut\\InAndOut.csproj": {}
   },
   "projects": {
-    "D:\\git\\ASP.NET_CORE_5\\InAndOut\\InAndOut\\InAndOut.csproj": {
+    "D:\\playground\\C#\\ASP.NET_CORE_5\\InAndOut\\InAndOut\\InAndOut.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\git\\ASP.NET_CORE_5\\InAndOut\\InAndOut\\InAndOut.csproj",
+        "projectUniqueName": "D:\\playground\\C#\\ASP.NET_CORE_5\\InAndOut\\InAndOut\\InAndOut.csproj",
         "projectName": "InAndOut",
-        "projectPath": "D:\\git\\ASP.NET_CORE_5\\InAndOut\\InAndOut\\InAndOut.csproj",
-        "packagesPath": "C:\\Users\\Катя\\.nuget\\packages\\",
-        "outputPath": "D:\\git\\ASP.NET_CORE_5\\InAndOut\\InAndOut\\obj\\",
+        "projectPath": "D:\\playground\\C#\\ASP.NET_CORE_5\\InAndOut\\InAndOut\\InAndOut.csproj",
+        "packagesPath": "C:\\Users\\kater\\.nuget\\packages\\",
+        "outputPath": "D:\\playground\\C#\\ASP.NET_CORE_5\\InAndOut\\InAndOut\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Катя\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kater\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\deps": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -86,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

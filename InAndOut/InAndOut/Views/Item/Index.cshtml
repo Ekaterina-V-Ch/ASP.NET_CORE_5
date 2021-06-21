@@ -2,7 +2,8 @@
 @{ViewData["Title"] = "Items"; }
 @model IEnumerable<InAndOut.Models.Item>
 
-<h1>@ViewData["Title"]</h1>
+@*<h1>@ViewData["Title"]</h1>*@
+
 
 <div class="container p-3">
     <div class="row pt-4">
@@ -15,7 +16,7 @@
     </div>
     <br />
 
-    @if(Model.Count() > 0)
+    @if (Model.Count() > 0)
     {
         <table class="table table-bordered table-striped" style="width:100%">
             <thead>
@@ -29,16 +30,29 @@
                     <th>
                         Lender
                     </th>
+                    <th>
+                        Change
+                    </th>
                 </tr>
             </thead>
             <tbody>
-                @foreach(var item in Model)
+                @foreach (var item in Model)
                 {
-                    <tr>
-                        <td width="30%">@item.ItemName</td>
-                        <td width="30%">@item.Borrower</td>
-                        <td width="30%">@item.Lender</td>
-                    </tr>
+                <tr>
+                    <td width="25%">@item.ItemName</td>
+                    <td width="25%">@item.Borrower</td>
+                    <td width="25%">@item.Lender</td>
+                    <td width="25%">
+                        <div class="w-100 btn-group" role="group">
+                            <form method="post" asp-controller="Item">
+                                <div>
+                                    <a asp-action="Update" asp-route-Id="@item.Id" class="btn btn-primary mx-1">Update</a>
+                                    <input type="submit" asp-action="Delete" asp-route-Id="@item.Id" class="btn btn-danger mx-1" value="Delete" />
+                                </div>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
                 }
             </tbody>
         </table>
