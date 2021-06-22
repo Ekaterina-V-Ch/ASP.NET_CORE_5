@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Newsfeed.Models
 {
-    public class SmartphonesNews
+    public class SmartphonesNews : Home
     {
         [Key]
         public int Id { get; set; }
-        public string News { get; set; }
-        public int Data { get; set; }
+        //public new string Topic { get; set; }
+        //public new string Content { get; set; }
+        //public new DateTime DateTimeCreated { get; set; }
+        //public new DateTime DateTimeUpdated { get; set; }
     }
 }
