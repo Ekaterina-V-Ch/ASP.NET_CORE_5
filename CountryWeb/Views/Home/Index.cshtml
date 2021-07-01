@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using (Html.BeginForm("GetCountry", "Home", FormMethod.Get))
+{
+    @Html.AntiForgeryToken()
+    <div class="container p-3" width="100%">
+        <div class="row pt-4" width="100%">
+            <div class="col-6 text-right">
+                <input type="text" name="name" id="ls" style="min-width: 50%; height: 50px; font-size: 20px;" placeholder="Inter country name"/>
+            </div>
+            <div class="col-6 text-left">
+                <button class="btn btn-info" type="submit" style="min-width: 15%; height: 50px; font-size: 20px;">Found</button>
+            </div>
+        </div>
+    </div>
+}

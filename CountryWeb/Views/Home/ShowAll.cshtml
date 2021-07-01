@@ -1,0 +1,51 @@
+﻿
+
+@model IEnumerable<CountriesWeb.Models.CountryInfo>
+
+<div class="container p-3">
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Code
+                    </th>
+                    <th>
+                        Capital
+                    </th>
+                    <th>
+                        Region
+                    </th>
+                    <th>
+                        Population
+                    </th>
+                    <th>
+                        Area
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var country in Model)
+                {
+                <tr>
+                    <td width="22%">@country.Name</td>
+                    <td width="10%">@country.Alpha3Code</td>
+                    <td width="17%">@country.Capital</td>
+                    <td width="17%">@country.Region</td>
+                    <td width="17%">@country.Population</td>
+                    <td width="17%">@country.Area</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No country added yet</p>
+    }
+</div>
+

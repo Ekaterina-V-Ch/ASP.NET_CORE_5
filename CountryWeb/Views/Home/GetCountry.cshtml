@@ -1,0 +1,55 @@
+﻿@*@page "/{name}"*@
+
+@model CountriesWeb.Models.CountryInfo
+
+<h1>@Model.Name</h1>
+
+
+<form method="post" asp-controller="Home" asp-action="SaveCountry">
+    <div asp-controller="Home" class="container p-3">
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Code
+                    </th>
+                    <th>
+                        Capital
+                    </th>
+                    <th>
+                        Region
+                    </th>
+                    <th>
+                        Population
+                    </th>
+                    <th>
+                        Area
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td width="22%"><input asp-for="Name" readonly class="form-control" /></td>
+                    <td width="10%"><input asp-for="Alpha3Code" readonly class="form-control" /></td>
+                    <td width="17%"><input asp-for="Capital" readonly class="form-control" /></td>
+                    <td width="17%"><input asp-for="Region" readonly class="form-control" /></td>
+                    <td width="17%"><input asp-for="Population" readonly class="form-control" /></td>
+                    <td width="17%"><input asp-for="Area" readonly class="form-control" /></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="row pt-4">
+            <div class="col-6 text-right">
+                @*<a asp-action="SaveCountry" asp-route-Id="@Model.Name" class="btn btn-primary mx-1">Save Country</a>*@
+                <input type="submit" class="btn btn-info w-25" value="Save Country" />
+                @*<input type="submit" asp-route-Id="@Model.Name" asp-action="SaveCountry" class="btn btn-info w-25" value="Save Country" />*@
+            </div>
+            <div class="col-6">
+                <a class="btn btn-danger w-25" asp-action="Index">Go back</a>
+            </div>
+        </div>
+    </div>
+</form>
